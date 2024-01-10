@@ -13,12 +13,14 @@ const (
 	KZ
 	RU
 	EN
+	LT
 )
 
 const (
 	CodeKZ = "KZ"
 	CodeRU = "RU"
 	CodeEN = "EN"
+	CodeLT = "LT"
 )
 
 // String returns language code or empty string
@@ -30,6 +32,8 @@ func (l Lang) String() string {
 		return CodeRU
 	case EN:
 		return CodeEN
+	case LT:
+		return CodeLT
 	case Unknown:
 		return ""
 	default:

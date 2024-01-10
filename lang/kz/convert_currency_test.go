@@ -6,9 +6,9 @@ import (
 
 	"github.com/gammban/numtow/internal/digit"
 	"github.com/gammban/numtow/internal/ds"
+	testdata "github.com/gammban/numtow/internal/testdata/lang_kz"
 
 	"github.com/gammban/numtow/curtow/cur"
-	"github.com/gammban/numtow/internal/testdata"
 )
 
 func TestCurrencyInt64_KZT(t *testing.T) {

@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gammban/numtow/internal/testdata"
+	testdata "github.com/gammban/numtow/internal/testdata/lang_ru"
 	"github.com/gammban/numtow/lang/ru/gender"
 )
 
