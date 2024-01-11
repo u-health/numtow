@@ -76,6 +76,11 @@ func convert(d ds.DigitString, gender Gender) (result string, err error) {
 		}
 
 		// megas
+		if t.Tens() == digit.Digit1 {
+			s.WriteString(megsPlural2[i])
+			s.WriteString(sep)
+			continue
+		}
 		switch t.Units() {
 		case digit.DigitUnknown:
 		case digit.Digit0:
