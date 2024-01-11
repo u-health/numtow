@@ -4,6 +4,7 @@ import (
 	"github.com/gammban/numtow/lang"
 	"github.com/gammban/numtow/lang/en"
 	"github.com/gammban/numtow/lang/kz"
+	"github.com/gammban/numtow/lang/lt"
 	"github.com/gammban/numtow/lang/ru"
 )
 
@@ -18,6 +19,10 @@ func String(amount string, language lang.Lang, options ...interface{}) (words st
 		o := ru.ParseCurrencyOpts(options...)
 
 		return ru.CurrencyString(amount, o...)
+	case lang.LT:
+		o := lt.ParseCurrencyOpts(options...)
+
+		return lt.CurrencyString(amount, o...)
 	case lang.EN:
 		o := en.ParseCurrencyOpts(options...)
 

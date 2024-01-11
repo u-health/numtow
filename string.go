@@ -8,13 +8,17 @@ import (
 )
 
 // String converts decimal number to words.
-//  String("1", lang.EN)
+//
+//	String("1", lang.EN)
 func String(decimal string, language lang.Lang, options ...interface{}) (words string, err error) {
 	switch language {
 	case lang.KZ:
 		o := kz.ParseOpts(options...)
 
 		return kz.String(decimal, o...)
+	//case lang.LT:
+	//	o := en.ParseOpts(options...)
+	//	return lt.String(decimal, o...)
 	case lang.RU:
 		o := ru.ParseOpts(options...)
 
